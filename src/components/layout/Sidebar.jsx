@@ -4,8 +4,10 @@ import {
   Library,
   Plus,
   Search,
+  UserRound,
 } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
+import { useAuth } from '../../context/AuthContext'
 import { playlists } from '../../data/music'
 
 const linkClass = ({ isActive }) =>
@@ -14,6 +16,8 @@ const linkClass = ({ isActive }) =>
   }`
 
 export default function Sidebar({ open, onClose }) {
+  const { user } = useAuth()
+
   return (
     <>
       {open ? (
@@ -51,6 +55,10 @@ export default function Sidebar({ open, onClose }) {
             <NavLink to="/library" className={linkClass} onClick={onClose}>
               <Library size={22} />
               Your Library
+            </NavLink>
+            <NavLink to={user ? '/profile' : '/login'} className={linkClass} onClick={onClose}>
+              <UserRound size={22} />
+              {user ? 'Profile' : 'Log in'}
             </NavLink>
           </nav>
         </div>
