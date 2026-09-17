@@ -54,7 +54,7 @@ export default function Home() {
       <section className="relative overflow-hidden bg-[#000] text-white">
         <div className="animate-glow pointer-events-none absolute left-1/2 top-24 h-72 w-72 -translate-x-1/2 rounded-full bg-[#4b6cb7] blur-[90px]" />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(90,110,160,0.28),transparent_58%)]" />
-        <div className="relative mx-auto grid min-h-[90vh] max-w-[1200px] items-center gap-8 px-5 py-16 md:grid-cols-2 md:py-20">
+        <div className="relative grid min-h-[90vh] w-full items-center gap-8 px-6 py-16 md:grid-cols-2 md:px-12 md:py-20 lg:px-16">
           <div className="text-center md:text-left">
             <p className="animate-fade-up text-sm font-medium tracking-[0.28em] text-orange-400">NEW</p>
             <h1 className="animate-fade-up mt-3 text-5xl font-semibold tracking-tight sm:text-6xl lg:text-7xl" style={{ animationDelay: '0.12s' }}>
@@ -76,16 +76,16 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="relative mx-auto h-[420px] w-full max-w-[520px] md:h-[540px]">
+          <div className="relative mx-auto h-[420px] w-full max-w-none md:h-[540px] md:justify-self-end">
             <img
               src="/images/iphone-16-pro-back.png"
               alt=""
-              className="animate-float-delayed absolute left-2 top-16 w-[46%] drop-shadow-2xl md:left-0"
+              className="animate-float-delayed absolute left-2 top-16 w-[46%] drop-shadow-2xl md:left-8"
             />
             <img
               src="/images/iphone-16-pro-front.png"
               alt="iPhone 16 Pro"
-              className="animate-float absolute right-2 top-0 w-[58%] drop-shadow-2xl md:right-4"
+              className="animate-float absolute right-0 top-0 w-[58%] drop-shadow-2xl"
             />
           </div>
         </div>
@@ -104,9 +104,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-mist px-4 py-4 md:px-5">
+      <section className="bg-mist py-3">
         <Reveal>
-          <Link to="/iphone" className="group relative mb-3 block overflow-hidden rounded-[1.4rem] bg-black text-white">
+          <Link to="/iphone" className="group relative mb-3 block overflow-hidden bg-black text-white">
             <div className="grid items-center gap-4 px-6 py-10 md:grid-cols-2 md:px-12">
               <div>
                 <p className="text-sm tracking-[0.2em] text-orange-400">IPHONE</p>
@@ -126,7 +126,7 @@ export default function Home() {
         </Reveal>
         <div className="grid gap-3 md:grid-cols-2">
           <Reveal>
-            <Link to="/product/ipad-pro" className="group relative block overflow-hidden rounded-[1.4rem] bg-white">
+            <Link to="/product/ipad-pro" className="group relative block overflow-hidden bg-white">
               <div className="px-6 pt-10 text-center">
                 <h2 className="text-4xl font-semibold tracking-tight md:text-5xl">iPad Pro</h2>
                 <p className="mt-2 text-lg text-mute">Thinpossible.</p>
@@ -142,7 +142,7 @@ export default function Home() {
             </Link>
           </Reveal>
           <Reveal delay={120}>
-            <Link to="/product/macbook-pro-14" className="group relative block overflow-hidden rounded-[1.4rem] bg-black text-white">
+            <Link to="/product/macbook-pro-14" className="group relative block overflow-hidden bg-black text-white">
               <div className="px-6 pt-10 text-center">
                 <h2 className="text-4xl font-semibold tracking-tight md:text-5xl">MacBook Pro</h2>
                 <p className="mt-2 text-lg text-white/70">Mind-blowing. Head-turning.</p>
@@ -161,7 +161,7 @@ export default function Home() {
       </section>
 
       <section className="bg-white py-20">
-        <div className="mx-auto max-w-[1200px] px-5">
+        <div className="w-full px-6 md:px-12 lg:px-16">
           <Reveal>
             <div className="mb-10 text-center">
               <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">The Apple ecosystem</h2>
@@ -197,7 +197,7 @@ export default function Home() {
       </section>
 
       <section className="bg-mist py-20">
-        <div className="mx-auto max-w-[1200px] px-5">
+        <div className="w-full px-6 md:px-12 lg:px-16">
           <Reveal>
             <div className="mb-10 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
               <div>
@@ -220,7 +220,7 @@ export default function Home() {
       </section>
 
       <section className="bg-white py-20">
-        <div className="mx-auto max-w-[1200px] px-5">
+        <div className="w-full px-6 md:px-12 lg:px-16">
           <Reveal>
             <h2 className="mb-8 text-3xl font-semibold tracking-tight md:text-4xl">Just arrived</h2>
           </Reveal>
