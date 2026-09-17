@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "spotify-music",
+=======
+  "name": "apple-product",
+>>>>>>> d030ef1 (first commit)
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,10 +14,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "lucide-react": "^1.46.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-router-dom": "^7.18.3"
+=======
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-icons": "^5.7.0",
+    "react-router-dom": "^7.18.4"
+>>>>>>> d030ef1 (first commit)
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
